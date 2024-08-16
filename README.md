@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Alai Coding Challenge: TLDraw Timeline Implementation
 
 Welcome to the Alai Coding Challenge! This project is set up with React, TypeScript, and TLDraw.
@@ -50,3 +51,6 @@ Include a brief description of your approach and any challenges you faced.
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
 
 Good luck, and we look forward to seeing your implementation!
+=======
+# Alai-Coding-Challenge
+>>>>>>> ab4c0ab06c87e6e56d7506fe7817921d22172673

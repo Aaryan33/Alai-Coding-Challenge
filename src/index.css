@@ -1,6 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap");
 @import url("tldraw/tldraw.css");
 
-body {
-  font-family: "Inter";
+.tldraw-wrapper {
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  height: 500px;
+  position: relative;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }

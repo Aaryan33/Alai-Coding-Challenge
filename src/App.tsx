@@ -1,10 +1,30 @@
-import TldrawComponent from "./TldrawComponent";
+import React, { useState } from 'react';
+import TldrawComponent from './TldrawComponent';
 
-export default function App() {
+const App: React.FC = () => {
+  const [itemCount, setItemCount] = useState<number>(3);
+  const [inputValue, setInputValue] = useState<number>(3); // Separate state for input value
+
+  const handleGenerate = () => {
+    // Update itemCount when the Generate button is clicked
+    setItemCount(inputValue);
+  };
+
   return (
-    <div style={{ position: "fixed", inset: 0 }}>
-      <h1>Tldraw Canvas:</h1>
-      <TldrawComponent />
+    <div className="App">
+      <h1>Timeline Generator</h1>
+      <div>
+        <input
+          type="number"
+          value={inputValue} // Use inputValue instead of itemCount
+          onChange={(e) => setInputValue(Math.max(1, parseInt(e.target.value, 10) || 1))} // Update inputValue state
+          min={1}
+        />
+        <button onClick={handleGenerate}>Generate</button>
+      </div>
+      <TldrawComponent items={itemCount} /> 
     </div>
   );
-}
+};
+
+export default App;

@@ -26,3 +26,9 @@ Your task is to create a timeline component using TLDraw, similar to the one fou
    npm run dev
    ```
 4. Open your browser and navigate to `http://localhost:5173` (or the port shown in your terminal)
+
+## Resources
+
+- [TLDraw Documentation](https://tldraw.dev/)
+- [React Documentation](https://reactjs.org/)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
